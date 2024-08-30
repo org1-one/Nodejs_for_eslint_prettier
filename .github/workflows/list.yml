@@ -22,7 +22,10 @@ jobs:
       run: npm install
 
     - name: Run ESLint
-      run: npm run lint
+      run:  npm run lint
 
     - name: Run Prettier Check
       run: npm run format:check
+
+    - name: Run Prettier fix
+      run: npm run format:fix
