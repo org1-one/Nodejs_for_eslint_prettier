@@ -26,6 +26,7 @@ jobs:
 
     - name: Run Prettier Check
       run: npm run format:check
+      continue-on-error: true
 
     - name: Run Prettier fix
       run: npm run format:fix
